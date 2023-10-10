@@ -1,0 +1,38 @@
+package exemplo01;
+
+public class Relogio {
+    // atributos
+    private int hora;
+    private int minuto;
+    private int segundo;
+
+    public int getMinuto() { // GET É OBTER o objeto
+        return minuto;
+    }
+    public void setMinuto(int minuto) { //set é ALTERAR o objeto
+        if (minuto >= 0 && minuto < 60) {
+        this.minuto = minuto;
+        }
+    }
+    public int getSegundo() { // GET É OBTER o objeto
+        return segundo;
+    }
+    public void setSegundo(int segundo) { //set é ALTERAR o objeto
+        if (segundo >= 0 && segundo < 60){
+        this.segundo = segundo;
+        }
+    }
+    // metodos
+    public void setHora(int novaHora) { //set é ALTERAR o objeto
+        if (novaHora >= 0 && novaHora < 24) {
+            hora = novaHora;
+        }
+    }
+    public int getHora() { // GET É OBTER o objeto
+        return hora;
+    }
+
+    public String exibir() {
+        return hora + ":" + minuto + ":" + segundo;
+    }
+}
