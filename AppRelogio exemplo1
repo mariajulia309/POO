@@ -1,0 +1,16 @@
+# POO
+Programação Orientada a Objeto
+package exemplo01;
+
+public class AppRelogio{
+
+    public static void main(String[] args) {
+        Relogio relogio = new Relogio ();
+
+        relogio.setHora(19);
+        relogio.setMinuto(34);
+        relogio.setSegundo(25);
+        System.out.println(relogio.exibir());
+        System.out.println ("Hora atual: " + relogio.getHora());
+    }
+}
