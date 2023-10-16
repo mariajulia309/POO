@@ -1,0 +1,30 @@
+# POO
+Programação Orientada a Objeto
+package projetocalculadora;
+
+public class ProjetoCalculadora {
+
+   //atributos
+    private double ans;
+    
+    //metodos
+    public ProjetoCalculadora(){
+        this.ans = 0;
+}
+    public double soma(double x, double y){
+        this.ans = x + y;
+        return ans;
+    }
+    public double subtracao(double x, double y){
+        this.ans = x - y;
+        return ans;
+    }
+    public double divisao(double x, double y){
+        this.ans = x / y;
+        return ans;
+    }
+    public double multi(double x, double y){
+        this.ans = x * y;
+        return ans;
+    }
+}
