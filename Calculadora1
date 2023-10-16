@@ -27,4 +27,30 @@ public class ProjetoCalculadora {
         this.ans = x * y;
         return ans;
     }
+public double ans(){
+        return this.ans;
+    }
+    public void resetANS() {
+        this.ans = 0;
+    }
+    public double opera (double x, double y, char op) {
+        switch(op){
+            case '+' -> {
+                return soma(x,y);
+            }
+            case '-' -> {
+                return soma(x,y);
+            }
+            case '*' -> {
+                return soma(x,y);
+            }
+            case '/' -> {
+                return soma(x,y);
+            }
+            default -> {
+                return 0;
+            }
+        
+        }
+    }
 }
