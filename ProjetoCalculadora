@@ -1,0 +1,40 @@
+# POO
+Programação Orientada a Objeto
+package projetocalculadora.java;
+import java.util.Scanner;
+/**
+ *
+ * @author profslpa
+ */
+public class ProjetoCalculadora {
+ 
+    public static void main (String[] args){
+    
+       Calculadora calculadora = new Calculadora();
+        
+         Scanner entrada = new Scanner(System.in);
+        
+        System.out.println ("Digite o primeiro numero: ");
+        double x = entrada.nextDouble();
+        
+        System.out.println ("Digite o segundo numero: ");
+        double y = entrada.nextDouble();
+        
+        System.out.println ("Digite a operacao: + - * /");
+        char op = entrada.nextLine().charAt(0);
+        
+        if (op == '+') {
+            System.out.println(calculadora.soma(x,y));
+        }
+        else if (op == '-') {
+            System.out.println(calculadora.subtracao(x,y));
+        }
+        else if (op == '*') {
+            System.out.println(calculadora.multi(x,y));
+        }
+        else {
+            System.out.println(calculadora.divisao(x,y));
+        }
+        
+    }
+}
