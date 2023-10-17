@@ -1,0 +1,56 @@
+# POO
+Programação Orientada a Objeto
+package projetocalculadora.java;
+
+public class Calculadora {
+
+   //atributos
+    private double ans;
+    
+    //metodos
+    public Calculadora(){
+        this.ans = 0;
+    }
+    public double soma(double x, double y){
+        this.ans = x + y;
+        return ans;
+    }
+    public double subtracao(double x, double y){
+        this.ans = x - y;
+        return ans;
+    }
+    public double divisao(double x, double y){
+        this.ans = x / y;
+        return ans;
+    }
+    public double multi(double x, double y){
+        this.ans = x * y;
+        return ans;
+    }
+    public double ans(){
+        return this.ans;
+    }
+    public void resetANS() {
+        this.ans = 0;
+    }
+    public double opera (double x, double y, char op) {
+        switch(op){
+            case '+' -> {
+                return soma(x,y);
+            }
+            case '-' -> {
+                return subtracao(x,y);
+            }
+            case '*' -> {
+                return divisao(x,y);
+            }
+            case '/' -> {
+                return multi(x,y);
+            }
+            default -> {
+                return 0;
+            }
+        
+        }
+    }
+}
